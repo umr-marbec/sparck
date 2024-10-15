@@ -35,7 +35,7 @@ You can install the development version of spark like so:
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-library(spark)
+##library(spark)
 ## basic example code
 ```
 
