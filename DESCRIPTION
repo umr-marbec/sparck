@@ -1,9 +1,11 @@
 Package: spark
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
-Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+Authors@R: c(
+    person("Mathieu", "Depetris", , "mathieu.depetris@cnrs.fr", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0001-8080-0531")),
+    person("UMR MARBEC", "MARine Biodiversity Exploitation & Conservation", role = "cph")
+  )
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Suggests: 
@@ -14,5 +16,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Imports: 
     magrittr
-URL: https://github.com/umr-marbec/spark
+URL: https://github.com/umr-marbec/spark, https://umr-marbec.github.io/spark/
 BugReports: https://github.com/umr-marbec/spark/issues
