@@ -14,3 +14,5 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Imports: 
     magrittr
+URL: https://github.com/umr-marbec/spark
+BugReports: https://github.com/umr-marbec/spark/issues
