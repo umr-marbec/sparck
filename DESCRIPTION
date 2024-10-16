@@ -1,12 +1,12 @@
 Package: spark
-Title: What the Package Does (One Line, Title Case)
+Title: Support Package for Analysis, Research and Knowledge
 Version: 0.0.0.9000
 Authors@R: c(
     person("Mathieu", "Depetris", , "mathieu.depetris@cnrs.fr", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-8080-0531")),
     person("UMR MARBEC", "MARine Biodiversity Exploitation & Conservation", role = "cph")
   )
-Description: What the package does (one paragraph).
+Description: This package aims to provide support to our work through the availability of a several standardised functions for divers manipulations and analysis.
 License: MIT + file LICENSE
 Suggests: 
     testthat (>= 3.0.0)
