@@ -4,7 +4,7 @@ output: github_document
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r, include = FALSE}
+```{r, setup, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
@@ -13,44 +13,32 @@ knitr::opts_chunk$set(
 )
 ```
 
-# spark
+# spark <img src="man/figures/logo.png" align="right" height="138" alt="" />
+
+### Support Package for Analysis, Research and Knowledge
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN status](https://www.r-pkg.org/badges/version/spark)](https://CRAN.R-project.org/package=spark)
 <!-- badges: end -->
 
-The goal of spark is to ...
+This package aims to provide support to our work through the availability of a several standardised functions for divers manipulations and analysis. Take a look inside the online document to overview the panel of possibilities and don't hesitate to share your needs in terms of future development.    
 
 ## Installation
 
-You can install the development version of spark like so:
+For an installation of the package from the last validated version like so:
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+```{r, stable installation, eval=FALSE, echo=TRUE}
+devtools::install_github("https://github.com/umr-marbec/spark")
 ```
 
-## Example
+You can install the development version of spark through the following code. Be aware that the development version could have the last functions and feather available, but the stability or the global process of development is not validated yet.
 
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
-##library(spark)
-## basic example code
+``` {r, developement installation, eval=FALSE, echo=TRUE}
+devtools::install_github("https://github.com/umr-marbec/spark",
+                         ref = "development")
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+## Support and improvement
 
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+If you need any support, encounter any bug or you would like to add enhancements or suggestions of improvements, you can use the [GitHub issues](https://github.com/umr-marbec/spark/issues) page. 

@@ -1,7 +1,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# spark
+# spark <img src="man/figures/logo.png" align="right" height="138" alt="" />
+
+### Support Package for Analysis, Research and Knowledge
 
 <!-- badges: start -->
 
@@ -11,45 +13,33 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 status](https://www.r-pkg.org/badges/version/spark)](https://CRAN.R-project.org/package=spark)
 <!-- badges: end -->
 
-The goal of spark is to …
+This package aims to provide support to our work through the
+availability of a several standardised functions for divers
+manipulations and analysis. Take a look inside the online document to
+overview the panel of possibilities and don’t hesitate to share your
+needs in terms of future development.
 
 ## Installation
 
-You can install the development version of spark like so:
+For an installation of the package from the last validated version like
+so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+devtools::install_github("https://github.com/umr-marbec/spark")
 ```
 
-## Example
-
-This is a basic example which shows you how to solve a common problem:
+You can install the development version of spark through the following
+code. Be aware that the development version could have the last
+functions and feather available, but the stability or the global process
+of development is not validated yet.
 
 ``` r
-##library(spark)
-## basic example code
+devtools::install_github("https://github.com/umr-marbec/spark",
+                         ref = "development")
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+## Support and improvement
 
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+If you need any support, encounter any bug or you would like to add
+enhancements or suggestions of improvements, you can use the [GitHub
+issues](https://github.com/umr-marbec/spark/issues) page.
