@@ -1,3 +1,3 @@
-# spark (development version)
+# sparck (development version)
 
 * Initial CRAN submission.

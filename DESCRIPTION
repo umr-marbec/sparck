@@ -1,20 +1,23 @@
-Package: spark
-Title: Support Package for Analysis, Research and Knowledge
+Package: sparck
+Title: Support Package for Analysis, Research, Collaboration and Knowledge
 Version: 0.0.0.9000
 Authors@R: c(
     person("Mathieu", "Depetris", , "mathieu.depetris@cnrs.fr", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-8080-0531")),
     person("UMR MARBEC", "MARine Biodiversity Exploitation & Conservation", role = "cph")
   )
-Description: This package aims to provide support to our work through the availability of a several standardised functions for divers manipulations and analysis.
-License: MIT + file LICENSE
+Description: A system to provide support to our work through the
+    availability of a several standardised functions for divers
+    manipulations and analysis.
+License: GPL (>= 3)
+URL: https://github.com/umr-marbec/sparck,
+    https://umr-marbec.github.io/sparck/
+BugReports: https://github.com/umr-marbec/sparck/issues
+Imports: 
+    magrittr
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
-Imports: 
-    magrittr
-URL: https://github.com/umr-marbec/spark, https://umr-marbec.github.io/spark/
-BugReports: https://github.com/umr-marbec/spark/issues
