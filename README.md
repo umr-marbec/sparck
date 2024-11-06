@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# sparck <img src="man/figures/logo.png" align="right" height="138" alt="" />
+# sparck <a href="https://umr-marbec.github.io/sparck/"><img src="man/figures/logo.png" align="right" height="138" alt="sparck website" /></a>
 
 ### Support Package for Analysis, Research, Collaboration and Knowledge
 
@@ -11,6 +11,8 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/sparck)](https://CRAN.R-project.org/package=sparck)
+[![Codecov test
+coverage](https://codecov.io/gh/umr-marbec/sparck/graph/badge.svg)](https://app.codecov.io/gh/umr-marbec/sparck)
 <!-- badges: end -->
 
 A system to provide support to your work through the availability of a
