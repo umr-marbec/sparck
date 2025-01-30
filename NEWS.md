@@ -1,3 +1,4 @@
-# sparck (development version)
+# sparck version 1.0.0
 
-* Initial CRAN submission.
+* First stable version of the package
+* Add function "add_github_action", documentation and tests associated

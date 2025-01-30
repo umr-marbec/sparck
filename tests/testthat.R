@@ -7,6 +7,6 @@
 # * https://testthat.r-lib.org/articles/special-files.html
 
 library(testthat)
-library(spark)
+library(sparck)
 
-test_check("spark")
+test_check("sparck")

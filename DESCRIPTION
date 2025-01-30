@@ -6,6 +6,7 @@ Authors@R: c(
            comment = c(ORCID = "0000-0001-8080-0531")),
     person("UMR MARBEC", "MARine Biodiversity Exploitation & Conservation", role = "cph")
   )
+Maintainer: Mathieu Depetris <mathieu.depetris@cnrs.fr>
 Description: A system to provide support to our work through the
     availability of a several standardised functions for divers
     manipulations and analysis.
@@ -14,7 +15,9 @@ URL: https://github.com/umr-marbec/sparck,
     https://umr-marbec.github.io/sparck/
 BugReports: https://github.com/umr-marbec/sparck/issues
 Imports: 
-    magrittr
+    magrittr,
+    stringr (>= 1.5.1),
+    utils
 Suggests: 
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
