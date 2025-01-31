@@ -1,12 +1,12 @@
 <urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
 <url><loc>https://umr-marbec.github.io/sparck/404.html</loc></url>
-<url><loc>https://umr-marbec.github.io/sparck/LICENSE-text.html</loc></url>
 <url><loc>https://umr-marbec.github.io/sparck/LICENSE.html</loc></url>
 <url><loc>https://umr-marbec.github.io/sparck/authors.html</loc></url>
 <url><loc>https://umr-marbec.github.io/sparck/index.html</loc></url>
 <url><loc>https://umr-marbec.github.io/sparck/news/index.html</loc></url>
+<url><loc>https://umr-marbec.github.io/sparck/reference/add_github_action.html</loc></url>
 <url><loc>https://umr-marbec.github.io/sparck/reference/index.html</loc></url>
 <url><loc>https://umr-marbec.github.io/sparck/reference/pipe.html</loc></url>
-<url><loc>https://umr-marbec.github.io/sparck/reference/spark-package.html</loc></url>
+<url><loc>https://umr-marbec.github.io/sparck/reference/sparck-package.html</loc></url>
 </urlset>
 
