@@ -18,10 +18,11 @@ knitr::opts_chunk$set(
 ### Support Package for Analysis, Research, Collaboration and Knowledge
 
 <!-- badges: start -->
-[![License](https://github.com/umr-marbec/sparck)](https://img.shields.io/badge/license-GPL--3-blue.svg)
-[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+[![License](https://img.shields.io/badge/license-GPL--3-blue.svg)](https://github.com/umr-marbec/sparck)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/umr-marbec/sparck/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/umr-marbec/sparck/actions/workflows/R-CMD-check.yaml)
-[![Issues](https://github.com/umr-marbec/sparck/issues)](https://img.shields.io/github/issues/umr-marbec/sparck/sparck.svg)
+[![Issues](https://img.shields.io/github/issues/umr-marbec/sparck/sparck.svg)](https://github.com/umr-marbec/sparck/issues)
 [![Test-coverage](https://github.com/umr-marbec/sparck/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/umr-marbec/sparck/actions/workflows/test-coverage.yaml)
 <!-- badges: end -->
 
