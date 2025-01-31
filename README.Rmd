@@ -29,17 +29,10 @@ A system to provide support to your work through the availability of a several s
 
 For an installation of the package from the last validated version like so:
 
-```{r, stable installation, eval=FALSE, echo=TRUE}
+```{.r}
 devtools::install_github("https://github.com/umr-marbec/sparck")
-```
-
-You can install the development version of spark through the following code. Be aware that the development version could have the last functions and feather available, but the stability or the global process of development is not validated yet.
-
-``` {r, developement installation, eval=FALSE, echo=TRUE}
-devtools::install_github("https://github.com/umr-marbec/sparck",
-                         ref = "development")
 ```
 
 ## Support and improvement
 
-If you need any support, encounter any bug or you would like to add enhancements or suggestions of improvements, you can use the [GitHub issues](https://github.com/umr-marbec/sparck/issues) page. 
+If you need any support, encounter any bug or you would like to add enhancements or suggestions of improvements, you can use the [GitHub issues](https://github.com/umr-marbec/sparck/issues){.external target="_blank"} page. 

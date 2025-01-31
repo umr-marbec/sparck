@@ -30,18 +30,9 @@ so:
 devtools::install_github("https://github.com/umr-marbec/sparck")
 ```
 
-You can install the development version of spark through the following
-code. Be aware that the development version could have the last
-functions and feather available, but the stability or the global process
-of development is not validated yet.
-
-``` r
-devtools::install_github("https://github.com/umr-marbec/sparck",
-                         ref = "development")
-```
-
 ## Support and improvement
 
 If you need any support, encounter any bug or you would like to add
-enhancements or suggestions of improvements, you can use the [GitHub
-issues](https://github.com/umr-marbec/sparck/issues) page.
+enhancements or suggestions of improvements, you can use the
+<a href="https://github.com/umr-marbec/sparck/issues" class="external"
+target="_blank">GitHub issues</a> page.

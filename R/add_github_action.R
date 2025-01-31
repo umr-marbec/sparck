@@ -13,10 +13,10 @@
 #' @examples
 #' \dontrun{
 #' # example for "mirror_github_git" GitHub Action workflow creation
-#' add_github_actions(name = "mirror_github_git",
-#'                    arguments = c("github_repository_source_url" = "url_source",
-#'                                  "secret_token_name" = "my-awesome-token-name",
-#'                                  "git_repository_target_url" = "url_target"))
+#' add_github_action(github_action_name = "mirror_github_git",
+#'                   arguments = c("github_repository_source_url" = "url_source",
+#'                                 "secret_token_name" = "my-awesome-token-name",
+#'                                 "git_repository_target_url" = "url_target"))
 #' }
 add_github_action <- function(github_action_name,
                               arguments = NULL,
