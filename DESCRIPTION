@@ -1,6 +1,6 @@
 Package: sparck
 Title: Support Package for Analysis, Research, Collaboration and Knowledge
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: c(
     person("Mathieu", "Depetris", , "mathieu.depetris@cnrs.fr", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0001-8080-0531")),
