@@ -11,8 +11,8 @@
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/umr-marbec/sparck/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/umr-marbec/sparck/actions/workflows/R-CMD-check.yaml)
-[![test-coverage](https://github.com/umr-marbec/sparck/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/umr-marbec/sparck/actions/workflows/test-coverage.yaml)
 [![Issues](https://github.com/umr-marbec/sparck/issues)](https://img.shields.io/github/issues/umr-marbec/sparck/sparck.svg)
+[![Test-coverage](https://github.com/umr-marbec/sparck/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/umr-marbec/sparck/actions/workflows/test-coverage.yaml)
 <!-- badges: end -->
 
 A system to provide support to your work through the availability of a
