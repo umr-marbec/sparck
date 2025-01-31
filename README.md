@@ -7,12 +7,12 @@
 
 <!-- badges: start -->
 
+[![License](https://github.com/umr-marbec/sparck)](https://img.shields.io/badge/license-GPL--3-blue.svg)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/sparck)](https://CRAN.R-project.org/package=sparck)
-[![Codecov test
-coverage](https://codecov.io/gh/umr-marbec/sparck/graph/badge.svg)](https://app.codecov.io/gh/umr-marbec/sparck)
+[![R-CMD-check](https://github.com/umr-marbec/sparck/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/umr-marbec/sparck/actions/workflows/R-CMD-check.yaml)
+[![test-coverage](https://github.com/umr-marbec/sparck/actions/workflows/test-coverage.yaml/badge.svg)](https://github.com/umr-marbec/sparck/actions/workflows/test-coverage.yaml)
+[![Issues](https://github.com/umr-marbec/sparck/issues)](https://img.shields.io/github/issues/umr-marbec/sparck/sparck.svg)
 <!-- badges: end -->
 
 A system to provide support to your work through the availability of a
