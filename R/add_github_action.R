@@ -7,7 +7,7 @@
 #' @param test_mode Optional. Class "logical" is expected. By default FALSE. Optional argument used for the unit tests. Don't use it in a regular way.
 #' @details
 #' GitHub Actions workflows developed so far are:
-#' - "mirror_github_git", create a workflow to establishing a mirror between a GitHub repository and a repository from another Git. For this process, you need to fill three variables in the "arguments" parameter: "github_repository_source_url", "secret_token_name" and "git_repository_target_url". A full documentation is available through this [link](https://umr-marbec.github.io/den_pages/en/pages/git/miroir_github_gitlab.html).
+#' - "mirror_github_git", create a workflow to establishing a mirror between a GitHub repository and a repository from another Git. For this process, you need to fill three variables in the "arguments" parameter: "github_repository_source_url", "secret_token_name" and "git_repository_target_url". A full documentation is available through this [link](https://umr-marbec.github.io/den_pages/en/pages/git/miroir_github_git.html).
 #' @returns No return in the R environment. If the function run successfully, the yaml file associated with the GitHub Action workflow is created in the folders ".github/workflows" at the root of your working directory.
 #' @export
 #' @examples

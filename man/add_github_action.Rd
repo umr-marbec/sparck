@@ -23,7 +23,7 @@ The yaml file association will be created at the root of the R working directory
 \details{
 GitHub Actions workflows developed so far are:
 \itemize{
-\item "mirror_github_git", create a workflow to establishing a mirror between a GitHub repository and a repository from another Git. For this process, you need to fill three variables in the "arguments" parameter: "github_repository_source_url", "secret_token_name" and "git_repository_target_url". A full documentation is available through this \href{https://umr-marbec.github.io/den_pages/en/pages/git/miroir_github_gitlab.html}{link}.
+\item "mirror_github_git", create a workflow to establishing a mirror between a GitHub repository and a repository from another Git. For this process, you need to fill three variables in the "arguments" parameter: "github_repository_source_url", "secret_token_name" and "git_repository_target_url". A full documentation is available through this \href{https://umr-marbec.github.io/den_pages/en/pages/git/miroir_github_git.html}{link}.
 }
 }
 \examples{
