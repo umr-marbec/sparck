@@ -1,26 +1,24 @@
 {
+    "title": "sparck: Support Package for Analysis, Research, Collaboration and Knowledge",
+    "upload_type": "software",
+    "description": "An R package to provide support to the work of the UMR MARBEC and its partners through the availability of several standardized functions for manipulations, analysis, and global knowledge.",
     "creators": [
         {
-            "orcid": "0000-0001-8080-0531",
+            "name": "Depetris, Mathieu",
             "affiliation": "French National Centre for Scientific Research",
-            "name": "Depetris, Mathieu"
+            "orcid": "0000-0001-8080-0531"
         }
     ],
-
     "license": "GPL-3.0-or-later",
-
-    "title": "sparck: Support Package for Analysis, Research, Collaboration and Knowledge",
-
-    "description": "A R package to provide support to the work of the UMR MARBEC and his partners through the availability of a several standardised functions for manipulations, analysis and global knowledge.",
-
     "keywords": [
         "r",
         "package",
         "support",
         "marbec"
     ],
-
     "communities": [
-        {"identifier": "umr-marbec"}
+        {
+            "identifier": "umr-marbec"
+        }
     ]
 }
