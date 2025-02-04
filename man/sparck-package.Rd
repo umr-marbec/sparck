@@ -8,7 +8,7 @@
 \description{
 \if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-A system to provide support to our work through the availability of a several standardised functions for divers manipulations and analysis.
+A R package to provide support the work of the UMR MARBEC and his partners through the functions for manipulations, analysis and global knowledge.
 }
 \seealso{
 Useful links:
