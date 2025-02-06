@@ -8,6 +8,7 @@
 <!-- badges: start -->
 
 [![License](https://img.shields.io/badge/license-GPL--3-blue.svg)](https://github.com/umr-marbec/sparck)
+[![DOI](https://zenodo.org/badge/873042776.svg)](https://doi.org/10.5281/zenodo.14803020)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/umr-marbec/sparck/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/umr-marbec/sparck/actions/workflows/R-CMD-check.yaml)
