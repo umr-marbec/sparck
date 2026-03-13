@@ -2,4 +2,5 @@
 
 export("%>%")
 export(add_github_action)
+export(manipulation_raw_data_tape_station_agilent)
 importFrom(magrittr,"%>%")
