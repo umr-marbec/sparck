@@ -38,7 +38,7 @@ jobs:
       - name: Add forge remote
         run: |
           cd my-github-repository.git
-          git remote add mirror https://oauth2:${{ secrets.TOKEN_SPARCK_BACKUP }}@forge.ird.fr/marbec/den/sparck_backup.git
+          git remote add mirror https://oauth2:${{ secrets.TOKEN_ACCESS_KODA_BACKUP_GITHUB_SPARCK }}@src.koda.cnrs.fr/nwhdwcsc/backup_github_sparck.git
   
       - name: Push to forge
         run: |
@@ -133,7 +133,7 @@ jobs:
           id: push_mirror
           if: ${{ env.SKIP_NEXT_STEP != 'true' }}
           run: |
-            git clone https://oauth2:${{ secrets.TOKEN_SPARCK_BACKUP }}@forge.ird.fr/marbec/den/sparck_backup.git
+            git clone https://oauth2:${{ secrets.TOKEN_ACCESS_KODA_BACKUP_GITHUB_SPARCK }}@src.koda.cnrs.fr/nwhdwcsc/backup_github_sparck.git
             cd test_miroir_github
 
             if [ -d "release-assets" ]; then
