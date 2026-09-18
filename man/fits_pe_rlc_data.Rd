@@ -13,13 +13,13 @@ fits_pe_rlc_data(
 )
 }
 \arguments{
-\item{data_id}{Optional. By default NULL. Type "character" or"factor" expected. Vector of id(s) for a given RLC. If NULL, all data should be associated with a single RLC.}
+\item{data_id}{Optional. By default NULL. Type "character" or "factor" expected. Vector of id(s) for a given RLC. If NULL, all data should be associated with a single RLC.}
 
 \item{data_par}{Mandatory. Type "numeric" expected. Vector of PAR data. Units of umol m-2 s-1.}
 
 \item{data_fqfm}{Mandatory. Type "numeric" expected. Vector of Photosynthetic rate or PSII quantum efficiency data.}
 
-\item{fit_methods}{Mandatory. By default "Nelder-Mead". Type "character" or"factor" expected.}
+\item{fit_methods}{Mandatory. By default "Nelder-Mead". Type "character" or"factor" expected. You can use one of several methods among "Marq", "Port", "Newton", "Nelder-Mead", "BFGS", "CG", "L-BFGS-B", "SANN" or "Pseudo".}
 
 \item{normalize}{Optional. By default TRUE. Type "boolean" expected. Set to TRUE if you want to normalize data.}
 }
