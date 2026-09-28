@@ -19,6 +19,11 @@ Useful links:
 **Maintainer**: Mathieu Depetris <mathieu.depetris@cnrs.fr>
 ([ORCID](https://orcid.org/0000-0001-8080-0531))
 
+Authors:
+
+- Mathieu Depetris <mathieu.depetris@cnrs.fr>
+  ([ORCID](https://orcid.org/0000-0001-8080-0531))
+
 Other contributors:
 
 - UMR MARBEC MARine Biodiversity Exploitation & Conservation \[copyright
