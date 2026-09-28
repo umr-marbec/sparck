@@ -22,6 +22,11 @@ Useful links:
 \author{
 \strong{Maintainer}: Mathieu Depetris \email{mathieu.depetris@cnrs.fr} (\href{https://orcid.org/0000-0001-8080-0531}{ORCID})
 
+Authors:
+\itemize{
+  \item Mathieu Depetris \email{mathieu.depetris@cnrs.fr} (\href{https://orcid.org/0000-0001-8080-0531}{ORCID})
+}
+
 Other contributors:
 \itemize{
   \item UMR MARBEC MARine Biodiversity Exploitation & Conservation [copyright holder]
