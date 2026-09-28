@@ -26,6 +26,16 @@ jobs:
         with:
           extra-packages: any::covr, any::xml2
           needs: coverage
+      
+      - uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          dependencies: '"hard"'
+          extra-packages: |
+            any::covr
+            any::xml2
+            github::cran/insol
+            github::cran/phytotools
+          needs: website
 
       - name: Test coverage
         run: |

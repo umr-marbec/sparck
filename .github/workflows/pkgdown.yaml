@@ -34,7 +34,12 @@ jobs:
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: any::pkgdown, local::.
+          dependencies: '"hard"'
+          extra-packages: |
+            any::pkgdown
+            local::.
+            github::cran/insol
+            github::cran/phytotools
           needs: website
 
       - name: Build site
