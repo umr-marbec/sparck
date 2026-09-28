@@ -35,7 +35,7 @@ jobs:
             any::xml2
             github::cran/insol
             github::cran/phytotools
-          needs: website
+          needs: coverage
 
       - name: Test coverage
         run: |
