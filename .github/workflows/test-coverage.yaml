@@ -33,6 +33,8 @@ jobs:
           extra-packages: |
             any::covr
             any::xml2
+            any::testthat
+            local::.
             github::cran/insol
             github::cran/phytotools
           needs: coverage
