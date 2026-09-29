@@ -24,6 +24,7 @@ jobs:
         run: |
           install.packages("pak")
           pak::pak(c("cran/insol", "cran/phytotools"))
+        shell: Rscript {0}
 
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
