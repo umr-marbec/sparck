@@ -40,13 +40,14 @@ jobs:
           http-user-agent: ${{ matrix.config.http-user-agent }}
           use-public-rspm: true
       
+      - name: Install dependencies insol and phytotools
+        run: |
+          install.packages("pak")
+          pak::pak(c("cran/insol", "cran/phytotools"))
+      
       - uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          dependencies: '"hard"'
-          extra-packages: |
-            any::rcmdcheck
-            github::cran/insol
-            github::cran/phytotools
+          extra-packages: any::rcmdcheck
           needs: check
 
       - uses: r-lib/actions/check-r-package@v2
