@@ -17,14 +17,14 @@ fits_pe_rlc_data <- function(data_id = NULL,
                              normalize = TRUE) {
   # Checks dependancies availability for phytotools packages
   if (! requireNamespace("phytotools",
-                        quietly = TRUE)) {
+                         quietly = TRUE)) {
     stop("The \"phytotools\" package is mandatory for this function.\n",
          "Install it along with its dependencies through:\n",
          "  install.packages(\"FME\")\n",
          "  remotes::install_github(\"https://github.com/cran/insol\")\n",
          "  remotes::install_github(\"https://github.com/cran/phytotools\")",
          call. = FALSE)
-    }
+  }
   # Global argument(s) check ----
   ## data_id ----
   if (! is.null(x = data_id)) {
@@ -73,6 +73,7 @@ fits_pe_rlc_data <- function(data_id = NULL,
   logger::log_appender(log_appender_tibble(name_log_tibble = "log_storage"),
                        index = 2)
   # Process ----
+  ## Models estimations ----
   global_data <- tibble::tibble("id" = data_id,
                                 "par" = data_par,
                                 "fqfm" = data_fqfm)
@@ -86,8 +87,8 @@ fits_pe_rlc_data <- function(data_id = NULL,
       current_models <- list()
       withCallingHandlers({
         current_models <- append(x = current_models,
-                                 values = list(phytotools::fitEP(x = current_data_id$PAR,
-                                                                 y = current_data_id$FqFm,
+                                 values = list(phytotools::fitEP(x = current_data_id$par,
+                                                                 y = current_data_id$fqfm,
                                                                  normalize = normalize,
                                                                  fitmethod = current_method)))
       }, warning = function(w) {
@@ -97,8 +98,8 @@ fits_pe_rlc_data <- function(data_id = NULL,
       })
       withCallingHandlers({
         current_models <- append(x = current_models,
-                                 values = list(phytotools::fitJP(x = current_data_id$PAR,
-                                                                 y = current_data_id$FqFm,
+                                 values = list(phytotools::fitJP(x = current_data_id$par,
+                                                                 y = current_data_id$fqfm,
                                                                  normalize = normalize,
                                                                  fitmethod = current_method)))
       }, warning = function(w) {
@@ -108,8 +109,8 @@ fits_pe_rlc_data <- function(data_id = NULL,
       })
       withCallingHandlers({
         current_models <- append(x = current_models,
-                                 values = list(phytotools::fitPGH(x = current_data_id$PAR,
-                                                                  y = current_data_id$FqFm,
+                                 values = list(phytotools::fitPGH(x = current_data_id$par,
+                                                                  y = current_data_id$fqfm,
                                                                   normalize = normalize,
                                                                   fitmethod = current_method)))
       }, warning = function(w) {
@@ -119,8 +120,8 @@ fits_pe_rlc_data <- function(data_id = NULL,
       })
       withCallingHandlers({
         current_models <- append(x = current_models,
-                                 values = list(phytotools::fitWebb(x = current_data_id$PAR,
-                                                                   y = current_data_id$FqFm,
+                                 values = list(phytotools::fitWebb(x = current_data_id$par,
+                                                                   y = current_data_id$fqfm,
                                                                    normalize = normalize,
                                                                    fitmethod = current_method)))
       }, warning = function(w) {
@@ -135,6 +136,34 @@ fits_pe_rlc_data <- function(data_id = NULL,
                                      sep = "_")
       current_data_id_models <- append(x = current_data_id_models,
                                        values = current_models)
+    }
+    ## Graphical displays ----
+    formulas <- c("EP" = quote(expr = E / ((1 / (alpha[1] * eopt[1]^2)) * E^2 + (1 / ps[1] - 2 / (alpha[1] * eopt[1])) * E + (1 / alpha[1]))),
+                  "JP" = quote(expr = alpha[1] * ek[1] * tanh(x = E / ek[1])),
+                  "PGH" = quote(expr = ps[1] * (1 - exp(x = -1 * alpha[1] * E / ps[1])) * exp(x = -1 * beta[1] * E / ps[1])),
+                  "Webb" = quote(expr = alpha[1] * ek[1] * (1 - exp(x = -E / ek[1]))))
+    for (current_model_id in seq_len(length.out = length(x = current_data_id_models))) {
+      current_model <- current_data_id_models[[current_model_id]]
+      current_ggplot <- ggplot2::ggplot(data = current_data_id, ggplot2::aes(x = par,
+                                                                             y = fqfm)) +
+        ggplot2::geom_point() +
+        ggplot2::scale_x_continuous(limits = c(0, 1500)) +
+        ggplot2::scale_y_continuous(limits = c(0, 150)) +
+        ggplot2::labs(x = "PAR",
+                      y = "Photosynthetic rate",
+                      title = names(current_models[current_model_id]))
+      current_formula <- formulas[[current_model$model]]
+      E <- seq(0,
+               1500,
+               by = 1)
+      current_pr_model_estimate <- eval(expr = current_formula,
+                                        envir = current_model)
+      current_data_estimate <- tibble::tibble("par" = E,
+                                              "fqfm" = current_pr_model_estimate)
+      current_ggplot <- current_ggplot + ggplot2::geom_line(data = current_data_estimate,
+                                                            ggplot2::aes(x = par, y = fqfm),
+                                                            color = "red")
+      current_data_id_models[[current_model_id]]$graphic <- current_ggplot
     }
     models <- append(x = models,
                      values = list(list("data" = current_data_id,
