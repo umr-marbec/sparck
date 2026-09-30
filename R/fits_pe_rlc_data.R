@@ -144,8 +144,9 @@ fits_pe_rlc_data <- function(data_id = NULL,
                   "Webb" = quote(expr = alpha[1] * ek[1] * (1 - exp(x = -E / ek[1]))))
     for (current_model_id in seq_len(length.out = length(x = current_data_id_models))) {
       current_model <- current_data_id_models[[current_model_id]]
-      current_ggplot <- ggplot2::ggplot(data = current_data_id, ggplot2::aes(x = par,
-                                                                             y = fqfm)) +
+      current_ggplot <- ggplot2::ggplot(data = current_data_id,
+                                        ggplot2::aes(x = .data$par,
+                                                     y = .data$fqfm)) +
         ggplot2::geom_point() +
         ggplot2::scale_x_continuous(limits = c(0, 1500)) +
         ggplot2::scale_y_continuous(limits = c(0, 150)) +
@@ -161,7 +162,8 @@ fits_pe_rlc_data <- function(data_id = NULL,
       current_data_estimate <- tibble::tibble("par" = E,
                                               "fqfm" = current_pr_model_estimate)
       current_ggplot <- current_ggplot + ggplot2::geom_line(data = current_data_estimate,
-                                                            ggplot2::aes(x = par, y = fqfm),
+                                                            ggplot2::aes(x = .data$par,
+                                                                         y = .data$fqfm),
                                                             color = "red")
       current_data_id_models[[current_model_id]]$graphic <- current_ggplot
     }

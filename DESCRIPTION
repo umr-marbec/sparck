@@ -16,6 +16,7 @@ BugReports: https://github.com/umr-marbec/sparck/issues
 Imports: 
     checkmate (>= 2.3.4),
     dplyr (>= 1.2.1),
+    ggplot2 (>= 4.0.3),
     logger (>= 0.4.3),
     magrittr,
     readr (>= 2.2.0),
