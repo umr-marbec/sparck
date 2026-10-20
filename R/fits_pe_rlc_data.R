@@ -138,22 +138,26 @@ fits_pe_rlc_data <- function(data_id = NULL,
                                        values = current_models)
     }
     ## Graphical displays ----
-    formulas <- c("EP" = quote(expr = E / ((1 / (alpha[1] * eopt[1]^2)) * E^2 + (1 / ps[1] - 2 / (alpha[1] * eopt[1])) * E + (1 / alpha[1]))),
-                  "JP" = quote(expr = alpha[1] * ek[1] * tanh(x = E / ek[1])),
-                  "PGH" = quote(expr = ps[1] * (1 - exp(x = -1 * alpha[1] * E / ps[1])) * exp(x = -1 * beta[1] * E / ps[1])),
-                  "Webb" = quote(expr = alpha[1] * ek[1] * (1 - exp(x = -E / ek[1]))))
+    formulas_normalize <- list("TRUE" = c("EP" = quote(expr = 1 / (E^2 * (1 / (alpha[1] * eopt[1]^2)) + (E / ps[1]) - ((2 * E) / (alpha[1] * eopt[1])) + (1 / alpha[1]))),
+                                          "JP" = quote(expr = (1 / E) * alpha[1] * ek[1] * tanh(x = E / ek[1])),
+                                          "PGH" = quote(expr = (ps[1] / E) * (1 - exp(x = (-E * alpha[1]) / ps[1])) * exp(x = (-E * beta[1]) / ps[1])),
+                                          "Webb" = quote(expr = (1 / E) * alpha[1] * ek[1] * (1 - exp(x = -E / ek[1])))),
+                               "FALSE" = c("EP" = quote(expr = E / (E^2 * (1 / (alpha[1] * eopt[1]^2)) + (E / ps[1]) - ((2 * E) / (alpha[1] * eopt[1])) + (1 / alpha[1]))),
+                                           "JP" = quote(expr = alpha[1] * ek[1] * tanh(x = E / ek[1])),
+                                           "PGH" = quote(expr = ps[1] * (1 - exp(x = (-E * alpha[1]) / ps[1])) * exp(x = (-E * beta[1]) / ps[1])),
+                                           "Webb" = quote(expr = alpha[1] * ek[1] * (1 - exp(x = -E / ek[1])))))
     for (current_model_id in seq_len(length.out = length(x = current_data_id_models))) {
       current_model <- current_data_id_models[[current_model_id]]
       current_ggplot <- ggplot2::ggplot(data = current_data_id,
                                         ggplot2::aes(x = .data$par,
                                                      y = .data$fqfm)) +
         ggplot2::geom_point() +
-        ggplot2::scale_x_continuous(limits = c(0, 1500)) +
-        ggplot2::scale_y_continuous(limits = c(0, 150)) +
+        #ggplot2::scale_x_continuous(limits = c(0, 1500)) +
+        #ggplot2::scale_y_continuous(limits = c(0, max(current_data_id$fqfm))) +
         ggplot2::labs(x = "PAR",
                       y = "Photosynthetic rate",
                       title = names(current_models[current_model_id]))
-      current_formula <- formulas[[current_model$model]]
+      current_formula <- formulas_normalize[[normalize]][[current_model$model]]
       E <- seq(0,
                1500,
                by = 1)
